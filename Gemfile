@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml'
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
