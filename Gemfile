@@ -23,6 +23,7 @@ gem 'paperclip'
 gem 'masonry-rails'
 gem 'jquery-rails'
 gem 'acts_as_votable'
+gem 'webpacker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
