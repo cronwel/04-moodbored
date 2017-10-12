@@ -8,7 +8,10 @@ end
 
 
 gem 'rails', '~> 5.1.2'
+gem 'sqlite3'
 gem 'pg'
+gem 'better_errors'
+gem 'binding_of_caller'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -30,7 +33,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
-
+gem 'rails_12factor', group: :production
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
