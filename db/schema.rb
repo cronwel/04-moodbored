@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170805032103) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "pins", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -44,9 +47,9 @@ ActiveRecord::Schema.define(version: 20170805032103) do
 
   create_table "votes", force: :cascade do |t|
     t.string "votable_type"
-    t.integer "votable_id"
+    t.bigint "votable_id"
     t.string "voter_type"
-    t.integer "voter_id"
+    t.bigint "voter_id"
     t.boolean "vote_flag"
     t.string "vote_scope"
     t.integer "vote_weight"

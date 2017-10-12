@@ -8,7 +8,6 @@ end
 
 
 gem 'rails', '~> 5.1.2'
-gem 'sqlite3'
 gem 'pg'
 gem 'better_errors'
 gem 'binding_of_caller'
