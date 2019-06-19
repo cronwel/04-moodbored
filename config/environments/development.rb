@@ -38,6 +38,6 @@ Rails.application.configure do
 
   config.assets.quiet = true
 
-
+  config.webpacker.check_yarn_integrity = false
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
